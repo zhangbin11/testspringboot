@@ -2,6 +2,7 @@ package prs.controller;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,9 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class WebController {
 
-    @RequestMapping("/hello")
-    public String hello(){
-        return "view/hello.html";
+    @RequestMapping("/helloboot")
+    public String hello(Model model){
+        System.out.println("??");
+        return "hello";
     }
 
 }
