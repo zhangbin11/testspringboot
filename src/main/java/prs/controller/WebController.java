@@ -18,4 +18,9 @@ public class WebController {
         return "hello";
     }
 
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
 }
